@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Soal - 02</title>
+    <script>
+        function hasil(){
+            let masuk = Number(document.getElementById("masuk").value);
+            const kurs = 14560
+            let hitung = masuk / kurs;
+            document.getElementById("hitung").value=hitung;
+        }
+    </script>
+</head>
+<body>
+    <table border="1" style="text-align: center;">
+        <tr>
+            <td>Masukan Nilai Rupiah</td>
+            <td>Nilai Tukar</td>
+            <td>Hasil Dollar</td>
+        </tr>
+        <tr>
+            <td><input type="text" id="masuk" onchange="hasil()"></td>
+            <td id="kurs">Rp14.560</td>
+            <td><input type="text" id="hitung"></td>
+        </tr>
+    </table>
+</body>
+</html>
